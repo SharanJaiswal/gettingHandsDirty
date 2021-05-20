@@ -1,2 +1,1 @@
-for testing "git add ."
-fkjgsdk;lknfblknbf
+commited change to check the working of the git reset hard on another testfile2.txt.
