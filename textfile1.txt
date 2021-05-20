@@ -1,1 +1,1 @@
-commited change to check the working of the git reset hard on another testfile2.txt.
+first file to commit
