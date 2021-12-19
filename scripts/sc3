@@ -1,0 +1,15 @@
+#! /bin/bash
+
+declare -a IDX_VAR=("Sharan Jaiswal" "Saint" "Saint Jaiswal" 469 "45")
+echo ${#IDX_VAR[@]}
+
+IDX_VAR[10]="Jaiswal Saheb"
+echo ${#IDX_VAR[@]}
+
+for i in "${IDX_VAR[@]}"
+do
+	echo ${i}
+	echo "${i}"
+done
+
+echo -e "\nThe count of Initialized elements are: ${#IDX_VAR[@]} and ${#IDX_VAR[*]}"

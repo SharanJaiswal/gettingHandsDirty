@@ -1,0 +1,7 @@
+#! /bin/bash
+
+mkdir -p ./haystack/fold_{1..20..3} #1> /dev/null
+touch ./haystack/fold_{1..20..3}/file{1..200..5}
+echo "needle" > $(shuf -e -n 1 ./haystack/fold_{1..20..3}/file{1..200..5})
+egrep -rl "needle" ./haystack
+rm -rf ./haystack/

@@ -1,0 +1,34 @@
+#! /bin/bash
+
+(( a=1 ))
+while (( a<5 ))
+do
+	echo "Value is $a."
+	(( a++ ))
+done
+
+echo 
+echo "*** Infinity While Loop ***"
+echo
+
+while true # or, we can use while :
+do
+	sleep 3
+	echo "$a"
+	(( a-- ))
+	if [[ $a -eq 3 ]]
+	then break
+	fi
+done
+
+echo 
+echo "*** until Loop ***"
+echo 
+
+(( a=1 ))
+until false
+do
+	echo "Until loop: $a"
+	sleep 1
+	(( a++ ))
+done
