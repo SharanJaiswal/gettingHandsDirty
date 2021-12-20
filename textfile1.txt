@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 first file to commit
 second commit to this file.
 l1 f1lassan
 lassan part 1
-=======
 lassan part 1
 lassan part 2
->>>>>>> for testing rebase from newb pt2
